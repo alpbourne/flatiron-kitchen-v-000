@@ -26,7 +26,7 @@ class IngredientsController < ApplicationController
   end
 
   def update
-    if @ingredient.update(ingredient_params)
+    @ingredient.update(ingredient_params)
       redirect_to ingredient_path(@ingredient)
     else
       render :edit
